@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
+  </head>
+  <body>
+    <header class="pt-5 pr-4">
+      {% include logo.html %}
+      <div class="inline-block mb-4 text-xl font-bold align-middle cursor-pointer">Menu</div>
+    </header>
+    {{ content }}
+  </body>
+</html>
