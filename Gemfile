@@ -14,3 +14,5 @@ group :development do
   gem "standardrb"
 end
 
+
+gem "webrick", "~> 1.7"

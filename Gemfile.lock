@@ -57,7 +57,7 @@ GEM
     regexp_parser (2.1.1)
     rexml (3.2.5)
     rouge (3.26.0)
-    rubocop (1.12.1)
+    rubocop (1.13.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
@@ -68,21 +68,22 @@ GEM
       unicode-display_width (>= 1.4.0, < 3.0)
     rubocop-ast (1.5.0)
       parser (>= 3.0.1.1)
-    rubocop-performance (1.10.1)
-      rubocop (>= 0.90.0, < 2.0)
+    rubocop-performance (1.11.1)
+      rubocop (>= 1.7.0, < 2.0)
       rubocop-ast (>= 0.4.0)
     ruby-progressbar (1.11.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
-    standard (1.0.5)
-      rubocop (= 1.12.1)
-      rubocop-performance (= 1.10.1)
+    standard (1.1.0)
+      rubocop (= 1.13.0)
+      rubocop-performance (= 1.11.1)
     standardrb (1.0.0)
       standard
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
 
 PLATFORMS
   x86_64-linux
@@ -91,6 +92,7 @@ DEPENDENCIES
   jekyll
   jekyll-postcss
   standardrb
+  webrick (~> 1.7)
 
 BUNDLED WITH
-   2.2.6
+   2.2.15

@@ -10,6 +10,7 @@ module.exports = {
     fontFamily: {
       sans: [
         "futura-pt",
+        "Jost",
         "Avenir",
         "apple-system",
         "BlinkMacSystemFont",
@@ -22,6 +23,9 @@ module.exports = {
       ],
     },
     extend: {
+      spacing: {
+        smvw: "8.33333vw",
+      },
       colors: {
         "pale-yellow": "#fbffa7",
         "light-red": "#ff764d",
