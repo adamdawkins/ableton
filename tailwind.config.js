@@ -25,11 +25,13 @@ module.exports = {
     extend: {
       spacing: {
         smvw: "8.33333vw",
+        "screen-1/2w": "50vw",
+        "screen-1/2h": "50vh",
       },
       colors: {
         "pale-yellow": "#fbffa7",
         "light-red": "#ff764d",
-        "pale-blue": "#b1c5ff",
+        periwinkle: "#b1c5ff",
         "pale-violet": "#d5b3ff",
         "pale-lime-green": "#b6ffc0",
         "pure-blue": "#0000ff",
