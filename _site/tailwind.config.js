@@ -7,6 +7,20 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: [
+        "futura-pt",
+        "Avenir",
+        "apple-system",
+        "BlinkMacSystemFont",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "sans-serif",
+      ],
+    },
     extend: {
       colors: {
         "pale-yellow": "#fbffa7",
@@ -18,8 +32,5 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  variants: {},
 };
