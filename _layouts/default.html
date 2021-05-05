@@ -18,14 +18,14 @@
         </div>
       </div>
       <div class="border-t-2 border-gray-200 h-0"></div>
-      <div class="px-4 py-3">
-        <a href="/en/about">About</a>
-        <a href="/en/jobs">Jobs</a>
+      <div class="px-4 py-3 space-x-2">
+        <a href="/en/about" class="text-sm text-light-red">About</a>
+        <a href="/en/jobs" class="text-sm">Jobs</a>
       </div>
     </header>
     <div class="page">
       <main>
-        <div class="flex justify-center items-center mx-smvw mb-smvw min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/images/header.jpg')">
+        <div class="flex justify-center items-center mx-screen-1/12w mb-screen-1/12w min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/images/header.jpg')">
           {% include ableton-logo.html %}
         </div>
         {% capture section %}
@@ -36,8 +36,10 @@
         {% endcapture %}
         {% include components/section.html body=section %}
 
-        <div class="text-center bg-pale-yellow h-12">
-          Images here
+        <div class="mb-screen-1/12w py-screen-1/12w relative">
+          <div class="absolute top-0 z-0 bg-lemonade w-screen-7/12w h-screen-7/12w left-screen-5/12w"></div>
+          <div class="inline-block bg-center bg-cover ml-screen-1/12w w-screen-5/12w h-screen-5/12w z-10 relative align-middle" style="background-image: url('/assets/images/photo-1.jpg');"></div>
+          <div class="inline-block w-screen-1/3w h-screen-1/4w ml-screen-1/12w bg-cover bg-center z-10 relative align-middle" style="background-image: url('/assets/images/photo-2.jpg');"></div>
         </div>
 
         {% capture section %}
@@ -84,8 +86,8 @@
         {% endcapture %}
         {% include components/section.html body=section %}
 
-        <div class="bg-no-repeat bg-cover bg-center mx-smvw h-screen-1/2w" style="background-image: url('/assets/images/photo-8.jpg')"></div>
-        <div class="flex justify-center items-center mx-smvw p-smvw bg-periwinkle">
+        <div class="bg-no-repeat bg-cover bg-center mx-screen-1/12w h-screen-1/2w" style="background-image: url('/assets/images/photo-8.jpg')"></div>
+        <div class="flex justify-center items-center mx-screen-1/12w p-screen-1/12w bg-periwinkle">
           <h3 class="section-heading">
             We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
             <a class="block mt-4 text-pure-blue" href="/jobs">See latest jobs {% include icons/chevron-right.html %}</a>
