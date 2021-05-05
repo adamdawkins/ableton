@@ -48,8 +48,11 @@
         {% endcapture %}
         {% include components/section.html body=section %}
 
-        <div class="text-center bg-pale-yellow h-12">
-          Video here
+        <div class="mx-screen-1/12w mb-screen-1/12w">
+          <div class="relative aspect-w-16 aspect-h-9">
+            <img class="absolute top-0 left-0 w-full h-full pointer-events-none z-10 object-cover" src="/assets/images/poster-juanpe.jpg" alt="">
+          </div>
+          <p class="text-sm mt-2">Why Ableton - Juanpe Bolivar</p>
         </div>
         {% capture section %}
         {% include components/section-heading.html text="We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo." %}

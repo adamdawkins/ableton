@@ -5,5 +5,8 @@
     "postcss": "^8.2.13",
     "postcss-import": "^14.0.1",
     "tailwindcss": "^2.1.2"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0"
   }
 }
