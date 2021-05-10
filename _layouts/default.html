@@ -25,7 +25,7 @@
     </header>
     <div class="page">
       <main>
-        <div class="flex justify-center items-center mx-screen-1/12w mb-screen-1/12w min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/images/header.jpg')">
+        <div class="flex justify-center items-center mx-1/12vw mb-1/12vw min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('/assets/images/header.jpg')">
           {% include ableton-logo.html %}
         </div>
         {% capture section %}
@@ -36,10 +36,10 @@
         {% endcapture %}
         {% include components/section.html body=section %}
 
-        <div class="mb-screen-1/12w py-screen-1/12w relative">
-          <div class="absolute top-0 z-0 bg-lemonade w-screen-7/12w h-screen-7/12w left-screen-5/12w"></div>
-          <div class="inline-block bg-center bg-cover ml-screen-1/12w w-screen-5/12w h-screen-5/12w z-10 relative align-middle" style="background-image: url('/assets/images/photo-1.jpg');"></div>
-          <div class="inline-block w-screen-1/3w h-screen-1/4w ml-screen-1/12w bg-cover bg-center z-10 relative align-middle" style="background-image: url('/assets/images/photo-2.jpg');"></div>
+        <div class="mb-1/12vw py-1/12vw relative">
+          <div class="absolute top-0 z-0 bg-lemonade w-7/12vw h-7/12vw left-5/12vw"></div>
+          <div class="inline-block bg-center bg-cover ml-1/12vw w-5/12vw h-5/12vw z-10 relative align-middle" style="background-image: url('/assets/images/photo-1.jpg');"></div>
+          <div class="inline-block w-1/3vw h-1/4vw ml-1/12vw bg-cover bg-center z-10 relative align-middle" style="background-image: url('/assets/images/photo-2.jpg');"></div>
         </div>
 
         {% capture section %}
@@ -48,9 +48,13 @@
         {% endcapture %}
         {% include components/section.html body=section %}
 
-        <div class="mx-screen-1/12w mb-screen-1/12w">
+        {% assign play_svg = site.data.svgs["play"] %}
+        <div class="mx-1/12vw mb-1/12vw">
           <div class="relative aspect-w-16 aspect-h-9">
             <img class="absolute top-0 left-0 w-full h-full pointer-events-none z-10 object-cover" src="/assets/images/poster-juanpe.jpg" alt="">
+            <span
+              class="z-20 absolute top-1/2 left-1/2 w-75px h-75px -translate-x-1/2 -translate-y-1/2 bg-no-repeat bg-center bg-cover cursor-pointer transform"
+              style="background-image: url({{play_svg.url}})"></span>
           </div>
           <p class="text-sm mt-2">Why Ableton - Juanpe Bolivar</p>
         </div>
@@ -59,7 +63,9 @@
         <p>Most of us are active musicians, producers, and DJs, and many of us use Live and Push every day. We come from a wide range of cultural and professional backgrounds. Some of us have PhDs, some are self-taught, and most of us are somewhere in between. What connects us is the shared belief that each of us has the skills and knowledge to contribute to something big: helping to shape the future of music culture.</p>
         {% endcapture %}
         {% include components/section.html body=section %}
-        <div class="text-center bg-pale-yellow h-12"> Images here </div>
+        <div class="relative mb-1/12vw p-1/12vw">
+          <div class="absolute bg-spearmint top-0 z-0 w-5/12vw h-3/4vw left-0"></div>
+        </div>
 
         {% capture section %}
         {% include components/section-heading.html text="We believe it takes focus to create truly outstanding instruments. We only work on a few products and we strive to make them great." %}
@@ -89,8 +95,8 @@
         {% endcapture %}
         {% include components/section.html body=section %}
 
-        <div class="bg-no-repeat bg-cover bg-center mx-screen-1/12w h-screen-1/2w" style="background-image: url('/assets/images/photo-8.jpg')"></div>
-        <div class="flex justify-center items-center mx-screen-1/12w p-screen-1/12w bg-periwinkle">
+        <div class="bg-no-repeat bg-cover bg-center mx-1/12vw h-1/2vw" style="background-image: url('/assets/images/photo-8.jpg')"></div>
+        <div class="flex justify-center items-center mx-1/12vw p-1/12vw bg-periwinkle">
           <h3 class="section-heading">
             We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
             <a class="block mt-4 text-pure-blue" href="/jobs">See latest jobs {% include icons/chevron-right.html %}</a>
