@@ -1,0 +1,7 @@
+.section {
+  @apply m-1/12vw mt-0;
+}
+
+.section-heading {
+  @apply text-xl font-semibold mb-4;
+}

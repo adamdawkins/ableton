@@ -1,0 +1,27 @@
+{% set alpineJSVer = '2.8.2' %}
+{% set eleventyVersion = pkg.devDependencies['@11ty/eleventy'] | replace("^", "") %}
+{% set eleventyEnv = projEnv.environment %}
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="generator" content="Eleventy v{{ eleventyVersion }}" />
+
+    <title>{{ siteparams.siteTitle }}</title>
+    <link rel="icon" type="image/png" href="/images/icons/Eleventy-favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/images/icons/Eleventy-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/icons/Eleventy-favicon-96x96.png" sizes="96x96" />
+
+    {% if eleventyEnv == "production" %}
+      <style>{% include 'css/index.css' ignore missing %}</style>
+    {% else %}
+      <link rel="stylesheet" href="/css/index.css" type="text/css" />
+    {% endif %}
+
+    <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v{{ alpineJSVer }}/dist/alpine.min.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v{{ alpineJSVer }}/dist/alpine-ie11.min.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap" rel="stylesheet"/>
+  </head>
